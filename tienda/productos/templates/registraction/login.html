@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Iniciar Sesion/title>
+</head>
+<body>
+    <h1>Iniciar Sesion</h1>
+    <form method="post">
+        {& csr_token %}
+        {{form.as_p}}
+        <button type="submit"></button>
+    </form>
+    <a href="{% url 'registrar_usuario' %}">Registrarse</a>
+    <a href="{% url 'inicio' %}"><button>Volver a inicio</button></a>
+    
+</body>
+</html>
